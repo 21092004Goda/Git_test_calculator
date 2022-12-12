@@ -26,6 +26,13 @@ jobs:
           set -xe
           python -VV
           python -m site
+          python -m pip install --require-hashes -r Calculator/main.py
+          
+      - name: "Install dependencies"
+        run: |
+          set -xe
+          python -VV
+          python -m site
           python -m pip install --require-hashes -r Calculator/Test_programm_calculator/Calculator_test.py
       
       - name: "Install dependencies"
