@@ -28,7 +28,7 @@ jobs:
           python -VV
           python -m site
           python -m pip install -e .
-          python calculator.py
+          python Calculator_test.py
           
       - name: Run tests
         run: coverage run calculator.py
