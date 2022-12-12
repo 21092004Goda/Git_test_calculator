@@ -28,7 +28,7 @@ jobs:
           python -VV
           python -m site
           python -m pip install -e .
-          python Calculator_test.py
+          python Calculator_test.py zip_mods
           
       - name: Run tests
         run: coverage run calculator.py
