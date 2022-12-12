@@ -27,10 +27,10 @@ jobs:
           set -xe
           python -VV
           python -m site
-          python -m pip install -e .
-          python Calculator_test.py zip_mods
+       
+          python Calculator_test.py
           
       - name: Run unittest
-        run: coverage run calculator.py
+        run: coverage run https://github.com/21092004Goda/Git_test_calculator/calculator.py
       - name: Tests report
         run: coverage report
