@@ -23,6 +23,6 @@ jobs:
       - name: Add Reporter
         run: pip install coverage
       - name: Run tests
-        run: coverage run TestCalc.py
+        run: coverage run Calculator/Test_programm_calculator/Calculator_test.py
       - name: Tests report
         run: coverage report
