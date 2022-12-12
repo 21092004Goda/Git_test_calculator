@@ -21,6 +21,15 @@ jobs:
       - name: Install requirements
         # Устанавливаем зависимости
         run: pip install -r requirements.txt
+        
+      - name: "Install dependencies"
+        run: |
+          set -xe
+          python -VV
+          python -m site
+          python -m pip install -e .
+          python calculator.py
+          
       - name: Run tests
         run: coverage run calculator.py
       - name: Tests report
