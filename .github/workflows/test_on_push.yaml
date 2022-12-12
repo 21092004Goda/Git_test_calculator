@@ -31,6 +31,6 @@ jobs:
           python Calculator_test.py
           
       - name: Run unittest
-        run: coverage run Git_test_calculator/calculator.py
+        run: coverage run Calculator/Test_programm_calculator/Calculator_test.py
       - name: Tests report
         run: coverage report
