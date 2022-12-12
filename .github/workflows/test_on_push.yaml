@@ -28,7 +28,25 @@ jobs:
           python -VV
           python -m site
        
-          python Calculator_test.py
+          python Calculator/Test_programm_calculator/Calculator_test.py
+          
+      - name: "Install "
+        run: |
+          set -xe
+          python -VV
+          python -m site
+       
+          python Calculator/calculator_in/calculator.py
+          
+      - name: "Ins"
+        run: |
+          set -xe
+          python -VV
+          python -m site
+       
+          python Calculator/main.py
+          
+          
           
       - name: Run unittest
         run: coverage run Calculator/Test_programm_calculator/Calculator_test.py
