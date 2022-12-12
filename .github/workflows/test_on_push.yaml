@@ -30,7 +30,7 @@ jobs:
           python -m pip install -e .
           python Calculator_test.py zip_mods
           
-      - name: Run tests
+      - name: Run unittest
         run: coverage run calculator.py
       - name: Tests report
         run: coverage report
